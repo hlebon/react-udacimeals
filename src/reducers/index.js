@@ -42,9 +42,9 @@ const initialCalendarState = {
   }
 
   //reducers
-function calendar(state = initialCalendarState, action){
+function calendar(state = initialCalendarState, actions){
     const { day, recipe, meal } = actions;
-    switch(action.type){
+    switch(actions.type){
         case ADD_RECIPE:
             return {
                 ...state,
