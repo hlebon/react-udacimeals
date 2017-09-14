@@ -50,9 +50,10 @@ function calendar(state = initialCalendarState, actions){
                 ...state,
                 [day]: {
                     ...state[day],
-                    [meal]: recipe.meal,
+                    [meal]: recipe.label,
                 }
             }
+        
         case REMOVE_FROM_CALENDAR:
             return{
                 ...state,
