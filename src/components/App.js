@@ -167,6 +167,7 @@ class App extends Component {
   }
 }
 
+//debo saber que hace esto
 function mapStateToProps ({ food, calendar }) {
   const dayOrder = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
 
@@ -184,6 +185,8 @@ function mapStateToProps ({ food, calendar }) {
   }
 }
 
+
+//debo saber que hace esto
 function mapDispatchToProps (dispatch) {
   return {
     selectRecipe: (data) => dispatch(addRecipe(data)),
@@ -191,6 +194,7 @@ function mapDispatchToProps (dispatch) {
   }
 }
 
+//debo saber que hacer esto
 export default connect(
   mapStateToProps,
   mapDispatchToProps
